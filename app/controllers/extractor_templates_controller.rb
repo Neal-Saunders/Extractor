@@ -25,6 +25,7 @@ class ExtractorTemplatesController < ApplicationController
 
     respond_to do |format|
       if @extractor_template.save
+        ::ExtractorTemplates::CreateGithubIssue.perform
         format.html { redirect_to @extractor_template, notice: "Extractor template was successfully created." }
         format.json { render :show, status: :created, location: @extractor_template }
       else
