@@ -24,6 +24,9 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    active_operation (0.2.0)
+      activesupport (> 4.0)
+      smart_properties (~> 1.0)
     activejob (5.2.6)
       activesupport (= 5.2.6)
       globalid (>= 0.3.6)
@@ -151,6 +154,7 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    smart_properties (1.16.2)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -188,6 +192,7 @@ PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
+  active_operation
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)
