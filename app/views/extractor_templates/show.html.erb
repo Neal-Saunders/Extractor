@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong> sheetid:</strong>
+  <%= @extractor_template. sheetID %>
+</p>
+
+<p>
+  <strong>Sheetname:</strong>
+  <%= @extractor_template.SheetName %>
+</p>
+
+<p>
+  <strong>Primarykey:</strong>
+  <%= @extractor_template.PrimaryKey %>
+</p>
+
+<%= link_to 'Edit', edit_extractor_template_path(@extractor_template) %> |
+<%= link_to 'Back', extractor_templates_path %>

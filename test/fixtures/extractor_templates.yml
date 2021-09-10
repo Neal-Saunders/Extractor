@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+   sheetID: MyString
+  SheetName: MyString
+  PrimaryKey: MyString
+
+two:
+   sheetID: MyString
+  SheetName: MyString
+  PrimaryKey: MyString

@@ -1,0 +1,2 @@
+class ExtractorTemplate < ApplicationRecord
+end

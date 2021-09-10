@@ -1,0 +1,32 @@
+<%= form_with(model: extractor_template, local: true) do |form| %>
+  <% if extractor_template.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(extractor_template.errors.count, "error") %> prohibited this extractor_template from being saved:</h2>
+
+      <ul>
+      <% extractor_template.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :sheetID %>
+    <%= form.text_field :sheetID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :SheetName %>
+    <%= form.text_field :SheetName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :PrimaryKey %>
+    <%= form.text_field :PrimaryKey %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
